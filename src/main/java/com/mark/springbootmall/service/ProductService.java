@@ -4,8 +4,12 @@ import com.mark.springbootmall.dto.ProductRequest;
 import com.mark.springbootmall.model.Product;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public interface ProductService {
+
+    List<Product> getProducts();
 
     Product getProductById(Integer productId);
 
@@ -14,5 +18,6 @@ public interface ProductService {
     void updateProduct(Integer productId,ProductRequest productRequest);
 
     void deleteProductById(Integer productId);
+
 
 }
