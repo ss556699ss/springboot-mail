@@ -4,6 +4,7 @@ import com.mark.springbootmall.constant.ProductCategory;
 import com.mark.springbootmall.dto.ProductQueryParams;
 import com.mark.springbootmall.dto.ProductRequest;
 import com.mark.springbootmall.model.Product;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
