@@ -38,7 +38,7 @@ public class ProductController {
             // 分頁 Pagination
             @RequestParam(defaultValue = "5") @Max(1000) @Min(0)Integer limit, //限制取幾筆出來
             @RequestParam (defaultValue = "0")@Min(0) Integer offset //跳過幾筆數據
-            ){
+            ) {
         ProductQueryParams productQueryParams = new ProductQueryParams();
         productQueryParams.setCategory(category);
         productQueryParams.setSearch(search);
